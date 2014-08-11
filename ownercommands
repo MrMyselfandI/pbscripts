@@ -433,7 +433,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         var tier = utilities.find_tier(commandData);
         if(tier) {
             sys.resetLadder(tier);
-            normalbot.sendAll(tier + " ladder foi resetada!");
+            normalbot.sendAll(" A ladder da tier " tier + " foi resetada!");
             return;
         }
         normalbot.sendMessage(src, commandData + " não é uma tier");
@@ -782,7 +782,7 @@ exports.help =
         "/updatebansites: Atualizar sites banidos.",
         "/updatetierchecks: Atualizar tier checks.",
         "/updatecommands: Atualizar os arquivos de comandos.",
-        "/updatetiers[soft]: Para atualizar tier. Soft saves to file only without reloading. (preciso entender ~Mr. Perry)",
+        "/updatetiers[soft]: Para atualizar tier. Soft saves to file only without reloading.",
         "/loadstats: Carrega o plugin das estatisticas de uso do mês.",
         "/unloadstats: Cancela o carregamento do plugin das estatisticas de uso.",
         "/warnwebclients: Envia um alarme com uma mensagem para os usuários do webclient (TESTAR).",
