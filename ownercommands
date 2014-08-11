@@ -469,7 +469,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         if (battlesStopped)  {
             sys.sendAll("");
             sys.sendAll("*** ********************************************************************** ***");
-            battlebot.sendAll("As batalhas do servidor foram encerradas. O server será resetado em breve.");
+            battlebot.sendAll("As batalhas do servidor foram encerradas. O server será reiniciado em breve.");
             sys.sendAll("*** ********************************************************************** ***");
             sys.sendAll("");
         } else {
@@ -484,7 +484,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
             return;
         }
         sys.clearPass(commandData);
-        normalbot.sendMessage(src, "" + commandData + "'s senha foi resetada!", channel);
+        normalbot.sendMessage(src, "" + commandData + " teve sua senha limpada!", channel);
         if (tar !== undefined) {
             normalbot.sendMessage(tar, "Sua senha foi resetada por " + mod + "!");
             sys.sendNetworkCommand(tar, 14); // make the register button active again
