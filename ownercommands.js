@@ -433,7 +433,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         var tier = utilities.find_tier(commandData);
         if(tier) {
             sys.resetLadder(tier);
-            normalbot.sendAll(" A ladder da tier " tier + " foi resetada!");
+            normalbot.sendAll(" A ladder da tier " + tier + " foi resetada!");
             return;
         }
         normalbot.sendMessage(src, commandData + " não é uma tier");
