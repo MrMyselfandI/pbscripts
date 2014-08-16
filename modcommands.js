@@ -130,7 +130,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
             normalbot.sendMessage(src, "Usuário não está online.", channel);
             return;
         }
-        normalbot.sendAll("" + commandData + " foi chutado do servidor por " + nonFlashing(sys.name(src)) + "! [Channel: " + sys.channel(channel) + "]");
+        normalbot.sendAll("" + commandData + " foi chutado(a) do servidor por " + nonFlashing(sys.name(src)) + "! [Channel: " + sys.channel(channel) + "]");
         sys.kick(tar);
         var authname = sys.name(src).toLowerCase();
         script.authStats[authname] =  script.authStats[authname] || {};
@@ -635,5 +635,5 @@ exports.help =
         "/tier: Informa a tier de um usuário.",
         "/battlehistory: Ver o histórico de batalha recente de um usuário.",
         "/channelusers: Mostrar usuários de um channel.",
-		"/whereis: Mostra a localidade/IP de um usuário."
+	"/whereis: Mostra a localidade/IP de um usuário."
     ];
