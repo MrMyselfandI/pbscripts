@@ -726,7 +726,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         } else {
             SESSION.users(tar).tempAdmin = true;
         }
-        normalbot.sendAll(commandData.toCorrectCase() + " foi feito temporário " + type, staffchannel);
+        normalbot.sendAll(commandData.toCorrectCase() + " foi feito temporariamente " + type, staffchannel);
         return;
     }
     
@@ -782,7 +782,7 @@ exports.help =
         "/updatebansites: Atualizar sites banidos.",
         "/updatetierchecks: Atualizar tier checks.",
         "/updatecommands: Atualizar os arquivos de comandos.",
-        "/updatetiers[soft]: Para atualizar tier. Soft saves to file only without reloading.",
+        "/updatetiers[soft]: Para atualizar tier. Soft saves to file only without reloading. (preciso entender ~Mr. Perry)",
         "/loadstats: Carrega o plugin das estatisticas de uso do mês.",
         "/unloadstats: Cancela o carregamento do plugin das estatisticas de uso.",
         "/warnwebclients: Envia um alarme com uma mensagem para os usuários do webclient (TESTAR).",
