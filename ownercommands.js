@@ -83,7 +83,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         }
         return;
     }
-    if (command == "contributor") {
+    if (command == "contribuidor") {
         var s = commandData.split(":");
         var name = s[0], reason = s[1];
         if (sys.dbIp(name) === undefined) {
@@ -94,7 +94,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         script.contributors.add(name, reason);
         return;
     }
-    if (command == "contributoroff") {
+    if (command == "contribuidoroff") {
         var contrib = "";
         for (var x in script.contributors.hash) {
             if (x.toLowerCase() == commandData.toLowerCase())
@@ -412,7 +412,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         script.init();
         return;
     }
-    if (sys.ip(src) == sys.dbIp("Bahamut") || sys.name(src).toLowerCase() == "Mr. Perry" || sys.ip(src) == sys.dbIp("Eevee Trainer") || sys.name(src).toLowerCase() == "Servidor") {
+    if (sys.ip(src) == sys.dbIp("Bahamut") || sys.name(src).toLowerCase() == "Mr. Perry" || sys.ip(src) == sys.dbIp("EeveeTrainer") || sys.name(src).toLowerCase() == "Servidor") {
         if (command == "eval") {
             eval(commandData);
             return;
@@ -421,7 +421,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
             var bindChannel = channel;
             try {
                 var res = eval(commandData);
-                sys.sendMessage(src, "Recebido pelo eval: " + res, bindChannel);
+                sys.sendMessage(src, "Recebido por eval: " + res, bindChannel);
             }
             catch (err) {
                 sys.sendMessage(src, "Error no eval: " + err, bindChannel);
@@ -752,8 +752,8 @@ exports.help =
         "/impoff: Cancela o efeito de /imp.",
         "/sendmessage: Envia uma mensagem a um usuário. O format é /sendmessage usuário:::mensagem:::channel.",
         "/sendhtmlmessage: Envia uma mensagem HTML a um usuário. O format é /sendmessage usuário:::mensagem:::channel.",
-        "/contributor: Adiciona o status de contribuidor (para acesso ao Indigo) para um usuário com uma razão. O format é /contributor usuário:razão.",
-        "/contributoroff: Remove o status de contribuidor de um usuário.",
+        "/contribuidor: Adiciona o status de contribuidor (para acesso ao Indigo) para um usuário com uma razão. O format é /contribuidor usuário:motivo.",
+        "/contribuidoroff: Remove o status de contribuidor de um usuário.",
         "/clearpass: Limpa a senha de um usuário.",
         "/autosmute: Adiciona um usuário para a lista de smutes automáticos. ",
         "/removeautosmute: Remove um usuário da lista de smutes automáticos.",
