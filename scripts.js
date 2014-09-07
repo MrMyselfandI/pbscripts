@@ -3,7 +3,7 @@
 /*jshint "laxbreak":true,"shadow":true,"undef":true,"evil":true,"trailing":true,"proto":true,"withstmt":true*/
 // You may change these variables as long as you keep the same type
 var Config = {
-    base_url: "http://github.com/MrMyselfandI/pbscripts/",
+    base_url: "https://raw.githubusercontent.com/MrMyselfandI/pbscripts/master/",
     dataDir: "scriptdata/",
     bot: "PBSBot",
     kickbot: "PBSBot",
@@ -31,7 +31,7 @@ var Config = {
     League: [
     ],
     DreamWorldTiers: ["No Preview OU", "No Preview Ubers", "DW LC", "DW UU", "DW LU", "Gen 5 1v1 Ubers", "Gen 5 1v1", "Challenge Cup", "CC 1v1", "DW Uber Triples", "No Preview OU Triples", "No Preview Uber Doubles", "No Preview OU Doubles", "Shanai Cup", "Shanai Cup 1.5", "Shanai Cup STAT", "Original Shanai Cup TEST", "Monocolour", "Clear Skies DW"],
-    superAdmins: ["Dark Shadow", "Mega Croagunk"],
+    superAdmins: ["Dark Shadow", "Mega Croagunk", "Yesleandro"],
     canJoinStaffChannel: ["Bahamut", "Mr. Perry"],
     disallowStaffChannel: [],
     topic_delimiter: " | ",
