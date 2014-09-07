@@ -118,7 +118,7 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
         script.afterChatMessage(src, '/' + command + ' ' + commandData, channel);
         return;
     }
-    if (command == "contributors") {
+    if (command == "contribuidores") {
         sys.sendMessage(src, "", channel);
         sys.sendMessage(src, "*** CONTRIBUIDORES ***", channel);
         sys.sendMessage(src, "", channel);
@@ -963,7 +963,7 @@ exports.help =
         "/canlearn: Mostra se um pokémon pode aprender certo movimento. O format é /canlearn [Pokémon]:[move].",
         "/resetpass: Limpa sua senha do servidor (lembre-se de se registrar denovo).",
         "/auth [owners/admins/mods]: Mostra autoridades caso especificado nível, ou mostra todas caso nada seja especificado.",
-        "/contributors: Lista os contribuidores do servidor.",
+        "/contribuidores: Lista os contribuidores do servidor.",
         "/uptime: Mostra o tempo que o servidor está online.",
         "/players: Mostra o número de membros online. Aceita um tipo operacional, logo mostra a quantidade de usuários usando x client.",
         "/topchannels: Mostra os canais mais populares.",
